@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)http://tympanus.net/Development/RockingLetters/ -->
+<html class=" js csstransforms" lang="th"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <title>Happy Birth Day &#128107;</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="Rocking Letters with CSS3 and jQuery">
+        <meta name="keywords" content="css3, jquery, letters, words, animation, shake, crash, effect, rock, fly in">
+        <meta name="author" content="Codrops">
+        <!-- <link rel='shortcut icon' href='favicon.ico' type='image/x-icon' /> -->
+        <link rel="shortcut icon" href="./favicon.ico" />
+        <link rel="stylesheet" type="text/css" href="./lib/demo.css">
+        <link rel="stylesheet" type="text/css" href="./lib/style.css">
+		<link href="./lib/css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.5.0.min.js"></script>
+		<script type="text/javascript" async="" src="./lib/ga.js"></script>
+        <script type="text/javascript" src="./lib/modernizr.custom.66501.js"></script>
+<script type="text/javascript" src="./lib/jquery.min.js"></script>
+<script type="text/javascript" src="./lib/jquery.lettering.js"></script>
+<script type="text/javascript" src="./lib/jquery.animation.js"></script>
+<script type="text/javascript">
+  var SliderObj = {
+  SliderCounter : 0,
+  imgUrl : [1,2,3,4,5,6,7,8,9,10]
+}
+$(document).ready(function() {
+  Slider();
+});
+function Slider(){
+    if(SliderObj.SliderCounter >= SliderObj.imgUrl.length){
+        SliderObj.SliderCounter = 0;
+    }
+    $("body").animate({
+      opacity: 1
+    },3000, function() {
+      //console.log(SliderObj.imgUrl[SliderObj.SliderCounter]);
+      $("body").css('background-image', 'url(' + SliderObj.imgUrl[SliderObj.SliderCounter] + '.jpg)').animate({
+        opacity: 1
+      },3000,function(){
+          SliderObj.SliderCounter+=1;
+          Slider();
+      })
+    });
+    
+}
+</script>
+
+<script type="text/javascript">
+
+// Find the right method, call on correct element
+function launchFullscreen(element) {
+  if(element.requestFullscreen) {
+    element.requestFullscreen();
+  } else if(element.mozRequestFullScreen) {
+    element.mozRequestFullScreen();
+  } else if(element.webkitRequestFullscreen) {
+    element.webkitRequestFullscreen();
+  } else if(element.msRequestFullscreen) {
+    element.msRequestFullscreen();
+  }
+}
+
+function exitFullscreen() {
+  if(document.exitFullscreen) {
+    document.exitFullscreen();
+  } else if(document.mozCancelFullScreen) {
+    document.mozCancelFullScreen();
+  } else if(document.webkitExitFullscreen) {
+    document.webkitExitFullscreen();
+  }
+}
+
+function dumpFullscreen() {
+  console.log("document.fullscreenElement is: ", document.fullscreenElement || document.mozFullScreenElement || document.webkitFullscreenElement || document.msFullscreenElement);
+  console.log("document.fullscreenEnabled is: ", document.fullscreenEnabled || document.mozFullScreenEnabled || document.webkitFullscreenEnabled || document.msFullscreenEnabled);
+}
+
+// Events
+document.addEventListener("fullscreenchange", function(e) {
+  console.log("fullscreenchange event! ", e);
+});
+document.addEventListener("mozfullscreenchange", function(e) {
+  console.log("mozfullscreenchange event! ", e);
+});
+document.addEventListener("webkitfullscreenchange", function(e) {
+  console.log("webkitfullscreenchange event! ", e);
+  $("body").css("background-size","cover");
+});
+document.addEventListener("msfullscreenchange", function(e) {
+  console.log("msfullscreenchange event! ", e);
+});
+
+// Add different events for fullscreen
+
+</script> 
+    <link rel="stylesheet" type="text/css" href="./lib/demoadpacks.css"><script type="text/javascript" src="./lib/8"></script></head>
+    <body>
+        <audio src="BestOfTheWorld.mp3" loop autoplay></audio>
+        <div id="popup1" class="overlay">
+            <div class="popup">
+                <h2>คำอวยพรจากปาโก้ &#128055; &#128107; &#128106;</h2>
+                <a class="close" href="#">&times;</a>
+                <div class="content"><strong> 
+                    สุขสันต์วันเกิดครบรอบ 22 ปีนะครับ ก็แก่ขึ้นอีกหนึ่งปีแล้วน้อ<br><hr>ปีนี้เค้าก็อยู่ที่ไทยนี่แล้วเนาะเดี๋ยวไปหาอะไรอร่อยๆ ตะลุยกินกันนน ^^ <br><hr>
+                    ขอบคุณมากนะครับ ที่อยู่ข้างๆปาโก้เสมอ คอยเอาใจใส่ดูแลกันและกันไม่ขาด พาไปกินของอร่อยทุกวัน เดินจับมือกันทุกครั้งที่มีโอกาส <br><hr>
+                    อ้อแล้วก็ขอบคุณมากน้าที่ หามุกตลกมาเล่าให้ฟังบ่อยๆ อิอิ ปาโก้ชอบมากเลยนะ <br><hr>
+                    ปีนี้ก็ขออวยพรให้หยกสุขภาพแข็งแรง ออกกำลังกายบ่อยๆนะ จะได้ไม่เป็นภูมิแพ้ ไม่คัดจมูก แต่ถ้าน้ำมูกไหลก็เช็ดที่เสื้อเค้าได้เสมอน้า หุหุ ขอให้หยก ทำโปรเจคจบได้ลุล่วงตามที่ปราถนา ได้เจอแต่คนดีๆ ได้อยู่ในที่ดี ค้าขายรุ่งเรืองน้า ถ้าหยกเหนื่อยเมื่อไร ยังมีไหล่ปาโก้ไว้ให้พักเสมอนะ  >[OO]< สุดท้ายปาโก้ก็ขอให้ความรักของเรางอกงาม เดินไปข้างหน้าด้วยกัน และมีกันและกันตลอดไปนะ รักและห่วงเธอใยเสมอ  &#127874; &#10084;</strong>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+			<!-- Codrops top bar -->
+            <div class="codrops-top">
+                <a href="#">
+                    <strong>อายุมากขึ้นอีกหนึ่งปีแล้วเนาะ! รักนะครับ</strong> 
+                </a>
+                <span class="right">
+					<a href="#" target="_blank">Power by Paco</a>
+                    <a href="#">
+                        <strong>ครบ 22 ปี แล้ว เย่!</strong>
+                    </a>
+                </span>
+                <div class="clr"></div>
+            </div><!--/ Codrops top bar -->
+			<header>
+				<h1>&#127874;Happy Birthday &#127874;<span>สุขสันวันเกิดเด็กอ้วน ^oo^</span></h1>
+				<h2>มาถึงวันนี้อีกปีหนึ่งแล้วนะที่รักของปาโก้</h2>
+				<a id="ll-button" class="button" href="#">&#127874; Bang! &#127874;</a> 
+        <a id="" class="button" href="#" onclick="launchFullscreen(document.documentElement);">&#10084; FullScreen &#10084;</a>
+        <a class="button" href="#popup1">&#9786; อวยพรครับ^^ &#9786;</a>
+			</header>
+			<p id="ll-message" class="ll-message active">&#10084;ขอบคุณที่รักที่อยู่เคียงข้าง&#10084;<br><span>&#128107;รักเธอเท่าจักรวาลเลย&#128107;</span></p>
+			<div id="ll-wrapper" class="ll-wrapper active">
+				<h3><span class="char1">H</span><span class="char2">a</span><span class="char3">p</span><span class="char4">p</span><span class="char5">y</span></h3>
+				<h3><span class="char1">B</span><span class="char2">i</span><span class="char3">r</span><span class="char4">t</span><span class="char5">h</span></h3>
+				<h3><span class="char1">D</span><span class="char2">a</span><span class="char3">y</span><span class="char4"></span></h3>
+				<h3><span class="char1">2</span><span class="char2">2</span><span class="char3">+</span><span class="char4"></span></h3>
+			</div>
+        </div>
+
+       
+      <script type="text/javascript">
+    var ParseUserip;
+  </script>
+  ...
+  <script type="text/javascript" src="https://l2.io/ip.js?var=ParseUserip"></script>
+  <script type="text/javascript">
+  Parse.initialize("F0c4KrEfVpzyn9uw3bKYrpu0AggTHgbmdGgQZSoq", "JBW4y5MKl1kF9xMX6UF8aGss3hNMX9EY3PuOZhBW");
+  var TestObject = Parse.Object.extend("TestObject");
+  var testObject = new TestObject();
+  testObject.save({ip: ParseUserip}).then(function(object) {
+    
+  });
+  </script>
+</body></html>
